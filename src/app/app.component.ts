@@ -6,11 +6,8 @@ import { Component, HostBinding } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-<<<<<<< HEAD
   show!:boolean;
   reveal!:boolean;
-=======
->>>>>>> master
   title = 'ng-playground';
   constructor(){
   }
