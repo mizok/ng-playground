@@ -1,6 +1,9 @@
 <router-outlet (activate)="activateHandler($event)"></router-outlet>
+<div class="aux">
+  <app-aux></app-aux>
+</div>
 <button (click)="navigateTo()">
   <h1>Test Router</h1>
 </button>
 
-<a [routerLink]="'test'">Test Link</a>
+<a [routerLink]="[{ outlets: { aux: 'test' }}]">Test Link</a>

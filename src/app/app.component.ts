@@ -17,7 +17,7 @@ export class AppComponent {
   }
 
   navigateTo(){
-    this.router.navigateByUrl('test');
+    this.router.navigateByUrl('(aux:test)');
   }
 
 }
