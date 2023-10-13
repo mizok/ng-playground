@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, inject } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-root',
@@ -7,7 +8,16 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'ng-playground';
+  private router = inject(Router);
   constructor(){
+  }
+
+  activateHandler(ev:any){
+    console.log('router activate:',ev);
+  }
+
+  navigateTo(){
+    this.router.navigateByUrl('test');
   }
 
 }

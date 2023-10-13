@@ -1,1 +1,6 @@
-<my-component></my-component>
+<router-outlet (activate)="activateHandler($event)"></router-outlet>
+<button (click)="navigateTo()">
+  <h1>Test Router</h1>
+</button>
+
+<a [routerLink]="'test'">Test Link</a>
