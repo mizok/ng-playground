@@ -1,0 +1,10 @@
+p{
+  color:purple;
+}
+
+
+::ng-deep{
+  .apple p{
+    color:greenyellow;
+  }
+}
