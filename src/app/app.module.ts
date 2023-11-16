@@ -5,6 +5,7 @@ import { AppComponent } from './app.component';
 import { TestAComponent } from './test-a/test-a.component';
 import { TestBComponent } from './test-b/test-b.component';
 
+import { TestComponent } from './test/test.component'
 @NgModule({
   declarations: [
     AppComponent,
@@ -13,7 +14,8 @@ import { TestBComponent } from './test-b/test-b.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    TestComponent
   ],
   exports:[
   ],
